@@ -1,0 +1,47 @@
+/* Stilizovanje tabele */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin:  0;
+  }
+  
+  thead th {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: right; 
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .highlight {
+    background-color: #fdd; 
+  }
+  
+  th, td {
+    min-width: 200px;
+  }
+  
+  thead th:first-child, tbody td:first-child {
+    text-align: left;
+  }
+  
+  thead th:last-child, tbody td:last-child {
+    text-align: right; 
+  }
+  
