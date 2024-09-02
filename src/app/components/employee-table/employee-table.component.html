@@ -2,12 +2,11 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>Total Hours in Month</th>
+        <th>Total Hours </th>
       </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let employee of employees"
-            [ngStyle]="{'background-color': employee.totalHours < 100 ? '#f8d7da' : 'transparent'}">
+        <tr *ngFor="let employee of employees" [ngStyle]="{'background-color': employee.totalHours < 100 ? '#f8d7da' : 'transparent'}">
           <td><b>{{ employee.name }}</b></td>
           <td>{{ employee.totalHours }}<i> hrs</i></td>
         </tr>
